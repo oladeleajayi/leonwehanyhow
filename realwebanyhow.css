@@ -1,0 +1,88 @@
+/*box model hack*/
+* {
+    box-sizing: border-box;
+}
+
+/*clear fix hack */
+.clearfixafter {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+
+}
+
+.clear {
+    clear: both;
+}
+
+/******************
+/*LAYOUT
+/***********************/
+header,
+nav * {
+    width: 100%;
+    float: left;
+}
+
+nav>select,
+nav>form,
+nav>h2,
+nav>ul {
+    width: 10%;
+    margin: 0 5%;
+    list-style: none;
+}
+
+nav>ul>li {
+    width: 10%;
+    margin: 0 5%;
+}
+
+nav ul {
+    width: 25%;
+}
+
+nav>form {
+    margin: 0 1%;
+}
+
+nav>h2 {
+    width: 12%;
+    margin: 0 8%;
+    text-align: center;
+    color: rgba(5, 5, 117, 0.849);
+}
+
+
+section>main,
+section>article {
+    height: 500px;
+    width: 50%;
+    float: left;
+    display: block;
+    margin-top: 5%;
+}
+
+article>h2,
+article>h2+h3 {
+    font-size: 50px;
+}
+
+nav,
+form>input {
+    margin-right: 5%;
+}
+
+/*introduction of responsive website,desktop,laptop,tablet and mobile phones
+@media screen and (max-width:700px) {
+    section {
+        background: blue;
+    }
+}*/
+
+/************************
+ /*ADDITTIONAL STYLES
+ /*************************/
